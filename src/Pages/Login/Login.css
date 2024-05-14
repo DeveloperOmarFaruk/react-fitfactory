@@ -1,0 +1,93 @@
+.login-container {
+  background-image: url("../../Images/smoke-overlays.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.banner-div {
+  padding: 7rem 1rem 0rem 1rem;
+}
+
+.login-header-col-image {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+.login-header-col-image img {
+  width: auto;
+  height: auto;
+}
+
+.login-header-col-image-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4af04;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.login-header-col-image-centered h1 {
+  font-size: 6.5rem;
+  font-weight: bolder;
+  opacity: 0.6;
+}
+.login-header-col-image-centered h1:nth-last-child(1) {
+  color: white;
+}
+
+.login-header-right-div-title {
+  padding-left: 20px;
+  border-left: 1px solid white;
+}
+
+.login-header-right-div-title h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.login-header-right-div-title h2 {
+  color: #f4af04;
+  text-transform: uppercase;
+}
+.login-header-right-div-text {
+  padding-left: 20px;
+  margin: 3rem auto;
+}
+
+.login-header-right-div-text p {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.login-form-container {
+  background-color: #2f2e2e;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.login-btn {
+  padding: 10px 50px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #f4af04;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #3d3d3d;
+}
+
+.horizental-line {
+  width: 2px;
+  height: 100px;
+  background-color: white;
+  margin: 5px;
+  transform: rotate(90deg);
+}

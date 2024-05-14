@@ -1,0 +1,88 @@
+.footer-container-div-bg-image {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../../Images/weight-plates-in-a-gym-powerlifting-equipment.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 7rem 1rem 4rem 1rem;
+  background-attachment: fixed;
+}
+
+.footer-copy-write-div {
+  text-align: center;
+  background-color: #f4af04;
+  margin: 0px auto;
+  padding: 20px 1px;
+}
+.footer-copy-write-div p {
+  padding: 0px auto;
+  margin: 0px auto;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer-copy-write-div p span {
+  font-weight: bolder;
+}
+
+.footer-container-div-logo {
+  color: white;
+}
+
+.footer-container-div-logo img {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.footer-container-div-logo p {
+  font-family: "Finlandica", sans-serif;
+  text-align: justify;
+  font-weight: 100;
+  margin: 40px auto;
+}
+
+.footer-links-div h4 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer-links,
+.footer-adress-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links i,
+.footer-adress-div i {
+  font-size: 16px;
+  padding-right: 15px;
+}
+
+.footer-links p,
+.footer-adress-div p {
+  font-size: 16px;
+  padding: 0px;
+  margin: 5px 0px;
+  font-family: "Finlandica", sans-serif;
+}
+
+.footer-links:hover {
+  color: #f4af04;
+}
+
+.footer-adress-container {
+  padding-left: 20px;
+}

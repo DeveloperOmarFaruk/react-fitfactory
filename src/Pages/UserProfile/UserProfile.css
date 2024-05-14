@@ -1,0 +1,92 @@
+.user-profile-container {
+  background-image: url("../../Images/smoke-overlays-30.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.user-profile-banner-div {
+  padding: 7rem 1rem 0rem 1rem;
+}
+
+.user-profile-header-col-image {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+.user-profile-header-col-image img {
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+  filter: brightness(100%) contrast(100%) saturate(60%) blur(0px)
+    hue-rotate(0deg);
+}
+
+.user-profile-header-col-image-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4af04;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.user-profile-header-col-image-centered h1 {
+  font-size: 6.5rem;
+  font-weight: bolder;
+  opacity: 0.6;
+}
+.user-profile-header-col-image-centered h1:nth-last-child(1) {
+  color: white;
+}
+
+.user-profile-header-right-div-title {
+  padding-left: 20px;
+  border-left: 1px solid white;
+}
+
+.user-profile-header-right-div-title h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.user-profile-header-right-div-title h2 {
+  color: #f4af04;
+  text-transform: uppercase;
+}
+.user-profile-header-right-div-text {
+  padding-left: 20px;
+  margin: 3rem auto;
+}
+
+.user-profile-header-right-div-text p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Finlandica", sans-serif;
+}
+
+.user-profile-container-div-gray {
+  padding: 5rem 1rem 3rem 1rem;
+  background-color: transparent;
+  background-image: linear-gradient(320deg, #12100e 0%, #3d3d3d 100%);
+}
+
+.user-profile-card {
+  text-align: center;
+  margin: 3rem auto;
+  color: white;
+}
+
+.user-profile-card img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.user-profile-card p {
+  font-family: "Finlandica", sans-serif;
+}

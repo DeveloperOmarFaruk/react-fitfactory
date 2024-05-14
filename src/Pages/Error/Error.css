@@ -1,0 +1,103 @@
+.error-404-container {
+  background-image: url("../../Images/smoke-overlays-25.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.error-404-banner-div {
+  padding: 7rem 1rem 0rem 1rem;
+}
+
+.error-404-header-col-image {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+.error-404-header-col-image img {
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+  filter: brightness(100%) contrast(100%) saturate(60%) blur(0px)
+    hue-rotate(0deg);
+}
+
+.error-404-header-col-image-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4af04;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.error-404-header-col-image-centered h1 {
+  font-size: 6.5rem;
+  font-weight: bolder;
+  opacity: 0.6;
+}
+.error-404-header-col-image-centered h1:nth-last-child(1) {
+  color: white;
+}
+
+.error-404-header-right-div-title {
+  padding-left: 20px;
+  border-left: 1px solid white;
+}
+
+.error-404-header-right-div-title h4 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.error-404-header-right-div-title h2 {
+  color: #f4af04;
+  text-transform: uppercase;
+}
+.error-404-header-right-div-text {
+  padding-left: 20px;
+  margin: 3rem auto;
+}
+
+.error-404-header-right-div-text p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Finlandica", sans-serif;
+}
+
+.error-404-container-div-gray {
+  padding: 6rem 1rem 6rem 1rem;
+  background-color: transparent;
+  background-image: linear-gradient(320deg, #12100e 0%, #3d3d3d 100%);
+}
+
+.error-404-subscribe-div {
+  padding-left: 20px;
+  margin: 2rem auto;
+}
+
+.error-404-subscribe-div input,
+.error-404-subscribe-div button {
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+}
+
+.error-404-subscribe-div input {
+  width: 60%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.error-404-subscribe-div button {
+  background-color: #f4af04;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.error-404-subscribe-div button:hover {
+  background-color: #3d3d3d;
+}
