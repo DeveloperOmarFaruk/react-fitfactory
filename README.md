@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Here is some UI and work shown in this repository
+#
+[Live Preview Project](https://fir-authentication-7fd8f.web.app/)
+#
+## Project Details
+#
+Fit Factory is a modern dark-style Template Kit, built specifically for a gym or fitness studio. It’s easy to use the pre-made template pages to quickly build your website. This is not a WordPress theme. 
+#
+### `Technology Use`
+#
+1. React JS
+2. React Hooks
+3. Event Handlers
+4. Arrow Functions
+5. Axios API
+6. React Router
+7. React Router Dom
+8. React Private Route
+9. React Lists and Keys
+10. React CountUp
+11. React Context API
+12. React Google Map API
+13. React JQuery
+14. React Slick Carousel
+15. Firebase
+16. Font Awesome
+17. Google Fonts
+18. HTML5
+19. CSS3
+20. Bootstrap5
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#
+### `Templates`
+#
+1. Home
+2. About Us
+3. Classes
+4. Classes Details
+5. Trainers
+6. Review
+7. Pricing
+8. Contact Us
+9. Login
+10. Register
+11. User Profile
+12. Error 404
 
-## Available Scripts
+#
+### `Home Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/HomePage.png)
 
-In the project directory, you can run:
+#
+### `About Us Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/AboutPage.png)
 
-### `npm start`
+#
+### `Classes Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ClassesPage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#
+### `Classes Details Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ClassesDetailsPage.png)
 
-### `npm test`
+#
+### `Trainers Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/TrainersPage.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#
+### `Review Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ReviewPage.png)
 
-### `npm run build`
+#
+### `Pricing Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/PricingPage.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#
+### `Contact Us Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ContactPage.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#
+### `Login Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/LoginPage.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#
+### `Register Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/RegisterPage.png)
 
-### `npm run eject`
+#
+### `User Profile Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ProfilePage.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#
+### `Error 404 Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/react-fitfactory/blob/main/src/Images/UI/ErrorPage.png)
+#
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
