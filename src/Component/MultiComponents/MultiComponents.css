@@ -613,3 +613,13 @@
   filter: none;
   opacity: 1;
 }
+
+/* Loading Component Design */
+
+.loading-container {
+  padding: 20rem 1rem 40rem 1rem;
+  background-image: url("../../Images/smoke-overlays-6.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}

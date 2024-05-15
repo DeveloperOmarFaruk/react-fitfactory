@@ -1,11 +1,38 @@
 import React from "react";
 import "./Login.css";
 import Bodybuilder from "../../Images/portrait-of-attractive-naked-bodybuilder.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-  const { handleGoogleSignIn, setEmail, setPassword, handleLogIn } = useAuth();
+  const {
+    handleGoogleSignIn,
+    setEmail,
+    setPassword,
+    handleLogIn,
+    setUserInfo,
+    setError,
+    setLoading,
+  } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const windowScroll = () => {
+    window.scrollTo(0, 0);
+    navigate(location?.state ? location.state : "/home");
+  };
+
+  const handleSignIn = () => {
+    setLoading(true);
+    handleGoogleSignIn()
+      .then((result) => {
+        setUserInfo(result.user);
+        windowScroll();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
   return (
     <>
@@ -95,10 +122,7 @@ const Login = () => {
                 </div>
 
                 <div className="text-center">
-                  <button
-                    className=" login-btn mt-4"
-                    onClick={handleGoogleSignIn}
-                  >
+                  <button className=" login-btn mt-4" onClick={handleSignIn}>
                     {" "}
                     <i className="fa-brands fa-google-plus-g"></i> Google Login
                   </button>

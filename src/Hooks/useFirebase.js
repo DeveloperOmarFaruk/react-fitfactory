@@ -20,6 +20,7 @@ const useFirebase = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const auth = getAuth();
 
@@ -28,14 +29,7 @@ const useFirebase = () => {
   // ============================
 
   const handleGoogleSignIn = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUserInfo(result.user);
-        window.location.href = "/";
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    return signInWithPopup(auth, googleProvider);
   };
 
   // ============================
@@ -47,6 +41,8 @@ const useFirebase = () => {
       if (user) {
         setUserInfo(user);
       }
+
+      setLoading(false);
     });
   }, [auth]);
 
@@ -55,6 +51,7 @@ const useFirebase = () => {
   // ============================
   const handleRegister = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     let lowerCase = /[a-z]/g;
     let upperCase = /[A-Z]/g;
@@ -93,6 +90,7 @@ const useFirebase = () => {
   // ============================
   const handleLogIn = (e) => {
     e.preventDefault();
+    setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -112,10 +110,12 @@ const useFirebase = () => {
       .then(() => {
         setUserInfo([]);
         setFormData([]);
+        window.location.href = "/";
       })
       .catch((error) => {
         setError(error.message);
       });
+    setLoading(true);
   };
 
   return {
@@ -125,10 +125,14 @@ const useFirebase = () => {
     password,
     formData,
     error,
+    loading,
+    setUserInfo,
+    setError,
     setName,
     setEmail,
     setPassword,
     setFormData,
+    setLoading,
     handleGoogleSignIn,
     handleSignOut,
     handleRegister,
