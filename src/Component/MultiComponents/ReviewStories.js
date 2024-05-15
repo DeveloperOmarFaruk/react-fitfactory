@@ -15,10 +15,10 @@ const ReviewStories = () => {
           <h2>TESTIMONIALS</h2>
         </div>
 
-        <div className="row row-edit mt-4">
+        <div className="row  mt-4">
           {reviewData.map((item) => (
             <div
-              className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-4"
+              className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4"
               key={item.id}
             >
               <div className="review-stories-card">

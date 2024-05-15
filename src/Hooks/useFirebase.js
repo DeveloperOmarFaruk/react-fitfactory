@@ -49,10 +49,7 @@ const useFirebase = () => {
   // ============================
   // Form Register function
   // ============================
-  const handleRegister = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
+  const handleRegister = () => {
     let lowerCase = /[a-z]/g;
     let upperCase = /[A-Z]/g;
     let numbers = /[0-9]/g;
@@ -73,33 +70,15 @@ const useFirebase = () => {
       return setError("Password length should be more than 6");
     }
 
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
-        window.location.href = "/";
-        setError("");
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   // ============================
   // Form Log In function
   // ============================
-  const handleLogIn = (e) => {
-    e.preventDefault();
+  const handleLogIn = () => {
     setLoading(true);
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        setFormData(user);
-        window.location.href = "/";
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   // ============================

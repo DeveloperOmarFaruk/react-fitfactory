@@ -623,3 +623,141 @@
   background-position: top center;
   background-size: cover;
 }
+
+/* ============================ */
+/* Respinsive Design Area */
+/* ============================= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .vid-wrap img {
+    width: 100%;
+  }
+
+  .vid-wrap iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .common-header-col-image-centered h1 {
+    font-size: 3rem;
+  }
+
+  .common-header-col-image img {
+    width: 100%;
+  }
+
+  .about-vid-wrap {
+    width: 100%;
+  }
+
+  .award-card-image {
+    padding-left: 4rem;
+  }
+
+  .contact-form-div {
+    margin: auto;
+  }
+
+  .common-header-right-image-div img {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .vid-wrap img {
+    width: 100%;
+  }
+
+  .vid-wrap iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .common-header-col-image-centered h1 {
+    font-size: 3rem;
+  }
+
+  .about-vid-wrap {
+    width: 100%;
+  }
+
+  .award-card-image {
+    padding-left: 4rem;
+  }
+  .contact-form-div {
+    margin: auto;
+  }
+
+  .common-header-right-image-div img {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .vid-wrap img {
+    width: 90%;
+  }
+
+  .vid-wrap iframe {
+    width: 90%;
+    height: 200px;
+  }
+
+  .common-header-col-image-centered h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-vid-wrap {
+    width: 100%;
+  }
+
+  .award-card-image {
+    padding-left: 3.5rem;
+  }
+
+  .contact-form-div {
+    margin: auto;
+  }
+
+  .common-header-right-image-div img {
+    width: 100%;
+  }
+
+  .tainers-card-image img {
+    padding-left: 10rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1026px) {
+  .vid-wrap img {
+    width: 90%;
+  }
+
+  .vid-wrap iframe {
+    width: 90%;
+    height: 200px;
+  }
+
+  .common-header-col-image-centered h1 {
+    font-size: 4rem;
+  }
+
+  .why-choose-us-div i {
+    font-size: 1.4rem;
+  }
+  .common-header-col-image img {
+    width: 100%;
+  }
+
+  .award-card-image {
+    padding-left: 3.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

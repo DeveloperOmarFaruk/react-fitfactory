@@ -11,8 +11,8 @@ const Footer = () => {
     <>
       <div className="footer-container-div-bg-image">
         <div className="section">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 ">
+          <div className="row row-edit-start">
+            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4 ">
               <div className="footer-container-div-logo">
                 <img src={logo} alt="logo_image" />
                 <p>
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 ">
+            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4 ">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-links-div">
                   <h4>Quick Links</h4>
@@ -102,7 +102,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4 p-4">
+            <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4 ">
               <div className="common-header-right-div-title">
                 <h4>Find Us</h4>
                 <h2>READY FOR WORKOUT</h2>

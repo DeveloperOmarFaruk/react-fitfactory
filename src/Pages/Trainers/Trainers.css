@@ -86,3 +86,54 @@
   background-size: cover;
   padding: 5rem 1rem 0rem 1rem;
 }
+
+/* ============================ */
+/* Respinsive Design Area */
+/* ============================= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .trainers-header-col-image img {
+    width: 100%;
+  }
+
+  .trainers-header-col-image-centered h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .trainers-header-col-image img {
+    width: 100%;
+  }
+
+  .trainers-header-col-image-centered h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .trainers-header-col-image img {
+    width: 100%;
+  }
+
+  .trainers-header-col-image-centered h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .trainers-header-col-image-centered h1 {
+    font-size: 4.5rem;
+  }
+  .trainers-header-col-image img {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

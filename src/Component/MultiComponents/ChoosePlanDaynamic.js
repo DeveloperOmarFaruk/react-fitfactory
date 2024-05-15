@@ -39,7 +39,7 @@ const ChoosePlanDaynamic = () => {
           <div className="row mt-4 mb-4">
             {priceDataMonthly.map((item) => (
               <div
-                className="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-4"
+                className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4"
                 key={item.id}
               >
                 <div className="choose-plan-card">
@@ -72,7 +72,7 @@ const ChoosePlanDaynamic = () => {
           <div className="row mt-4 mb-4">
             {priceDataYearly.map((item) => (
               <div
-                className="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-4"
+                className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mt-4"
                 key={item.id}
               >
                 <div className="choose-plan-card">

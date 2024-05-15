@@ -32,16 +32,13 @@ const UserProfile = () => {
                   <p>
                     A gym user profile is a concise summary of an individual's
                     fitness-related information, preferences, and goals. It
-                    typically includes details such as age, gender, weight,
-                    height, fitness level, exercise history, preferred workout
-                    types, and specific fitness objectives.
+                    typically includes details such as age.
                   </p>
 
                   <p>
                     This profile helps gym staff and trainers personalize
                     workout plans, recommend suitable classes or equipment,
-                    track progress, and provide targeted support to help users
-                    achieve their fitness goals effectively and safely.
+                    track progress.
                   </p>
                 </div>
               </div>
@@ -60,15 +57,15 @@ const UserProfile = () => {
             <h2>User Profile</h2>
           </div>
 
-          {formData.email ? (
-            <div className="user-profile-card">
-              <p>{formData.email}</p>
-            </div>
-          ) : (
+          {userInfo.email ? (
             <div className="user-profile-card">
               <img src={userInfo.photoURL} alt="user_profile_image" />
               <h5>{userInfo.displayName}</h5>
               <p>{userInfo.email}</p>
+            </div>
+          ) : (
+            <div className="user-profile-card">
+              <p>{formData.email}</p>
             </div>
           )}
         </div>

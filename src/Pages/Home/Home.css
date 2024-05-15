@@ -9,6 +9,14 @@
   padding: 7rem 1rem 0rem 1rem;
 }
 
+.home-row-edit {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
 .vertical-line {
   width: 2px;
   /* Adjust the width as needed */
@@ -130,4 +138,50 @@
   background-position: top center;
   background-size: cover;
   padding: 0rem 1rem 0rem 1rem;
+}
+
+/* ============================ */
+/* Respinsive Design Area */
+/* ============================= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-row-edit {
+    flex-wrap: wrap;
+  }
+
+  .header-vartical-icon {
+    display: none;
+  }
+
+  .header-col-image-centered h1 {
+    font-size: 2.3rem;
+  }
+
+  .header-col-image img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header-col-image-centered h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-col-image-centered h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

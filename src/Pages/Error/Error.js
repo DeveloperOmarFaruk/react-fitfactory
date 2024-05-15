@@ -46,7 +46,7 @@ const Error = () => {
       <div className="error-404-container-div-gray">
         <div className="section">
           <div className="row row-edit mt-4">
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
               <div className="common-header-right-div-title">
                 <h4>Hmmm...</h4>
                 <h2>THAT PAGE DOES NOT EXIST</h2>
@@ -64,8 +64,8 @@ const Error = () => {
               <div className="common-button-design mt-4">
                 <button onClick={handleHomePage}>Back Home</button>
               </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+            </div>{" "}
+            <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
               <div className="common-header-right-div-title">
                 <h4>Our Newsletter</h4>
                 <h2>SUBSCRIBE NOW</h2>

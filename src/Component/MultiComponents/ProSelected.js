@@ -16,9 +16,9 @@ const ProSelected = () => {
           <h2>OUR CLASSES</h2>
         </div>
 
-        <div className="row">
+        <div className="row row-edit">
           {filterData.map((item) => (
-            <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12" key={item.id}>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12" key={item.id}>
               <div className="pro-selected-card">
                 <img src={item.img} alt="class_image" />
                 <h4>{item.title}</h4>

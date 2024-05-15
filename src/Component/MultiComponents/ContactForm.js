@@ -8,7 +8,7 @@ const ContactForm = () => {
     <>
       <div className="section">
         <div className="row row-edit">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div>
               <div className="common-header-right-div-title">
                 <h4>Find Us</h4>
@@ -67,7 +67,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="contact-form-div">
               <form>
                 <input type="text" placeholder="Your Name" />

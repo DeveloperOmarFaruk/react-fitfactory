@@ -2,7 +2,7 @@ import React from "react";
 import "./Register.css";
 import "../Login/Login.css";
 import Bodybuilder from "../../Images/portrait-of-attractive-naked-bodybuilder.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Register = () => {
@@ -13,12 +13,50 @@ const Register = () => {
     setName,
     handleRegister,
     error,
+    setUserInfo,
+    setError,
+    setLoading,
   } = useAuth();
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const windowScroll = () => {
+    window.scrollTo(0, 0);
+    navigate(location?.state ? location.state : "/home");
+  };
+
+  const handleGoogleRegister = () => {
+    setLoading(true);
+    handleGoogleSignIn()
+      .then((result) => {
+        setUserInfo(result.user);
+        windowScroll();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const handleFormRegister = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    handleRegister()
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+        setError("");
+        windowScroll();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
   return (
     <>
       <div className="login-container">
-        <div className="banner-div">
+        <div className="login-banner-div">
           <div className="section">
             <div className="row row-edit">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
@@ -38,17 +76,17 @@ const Register = () => {
 
                 <div className="login-header-right-div-text">
                   <p>
-                    Duis fermentum libero quis commodo blandit. Etiam urna
-                    ligula, volutpat non eros non, suscipit lacinia orci. Donec
-                    eu facilisis lorem, eget laoreet mi. Vivamus laoreet, urna
-                    eget laoreet ultrices, dolor risus ornare nisl, ut lacinia
-                    ipsum odio id mi.
+                    Embark on your fitness journey with us by registering as a
+                    member of our dynamic gym community! Our user registration
+                    process grants you access to personalized workout plans
+                    tailored to your goals, as well as the ability to book
+                    classes and track your progress with ease.
                   </p>
 
                   <p>
-                    Pellentesque eget eros at tortor luctus porttitor. Donec
-                    scelerisque dolor nec eros aliquam, sed faucibus augue
-                    dapibus.
+                    Start your fitness journey today! Register with us to access
+                    personalized workout plans, book classes, and join our
+                    vibrant gym community.
                   </p>
                 </div>
               </div>
@@ -60,7 +98,7 @@ const Register = () => {
       <div className="login-form-container">
         <div className="section">
           <div className="row row-edit">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
               <h1 className="text-white mt-4 mb-4">Please Register</h1>
               <div>
                 <div className="mb-3">
@@ -95,7 +133,7 @@ const Register = () => {
                 </div>
 
                 <button
-                  onClick={handleRegister}
+                  onClick={handleFormRegister}
                   className=" login-btn mt-4 mb-4"
                 >
                   Register
@@ -120,7 +158,7 @@ const Register = () => {
                 <div className="text-center">
                   <button
                     className=" login-btn mt-4"
-                    onClick={handleGoogleSignIn}
+                    onClick={handleGoogleRegister}
                   >
                     {" "}
                     <i className="fa-brands fa-google-plus-g"></i> Google

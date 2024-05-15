@@ -30,19 +30,13 @@ const Trainers = () => {
                   <p>
                     Fit Factory trainers provide a structured and motivating way
                     to achieve fitness goals, whether it's weight loss, muscle
-                    toning, stress relief, or overall health improvement. They
-                    offer variety, social interaction, and the guidance of
-                    trained instructors to help individuals stay committed and
-                    get the most out of their workouts.
+                    toning, stress relief, or overall health improvement.
                   </p>
 
                   <p>
                     Our instructor-led workouts in a group setting, targeting
                     various fitness goals such as cardio, strength, flexibility,
-                    and mind-body connection. From high-energy cardio sessions
-                    to calming yoga practices, there's something for everyone,
-                    fostering motivation, camaraderie, and improved overall
-                    health.
+                    and mind-body connection.
                   </p>
                 </div>
               </div>

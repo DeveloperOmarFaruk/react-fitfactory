@@ -34,18 +34,14 @@ const About = () => {
                     amenities to support workouts. It offers a range of services
                     such as equipment usage, classes, personal training, and
                     sometimes additional facilities like pools or courts for
-                    sports activities. Gyms aim to promote health, strength, and
-                    overall well-being through regular exercise routines
-                    tailored to individual needs and preferences.
+                    sports activities.
                   </p>
 
                   <p>
                     Beyond equipment and classes, gyms often feature additional
                     amenities aimed at enhancing the overall fitness experience.
                     These may include locker rooms with showers and changing
-                    areas, sauna or steam rooms for relaxation and post-workout
-                    recovery, and sometimes even swimming pools, basketball
-                    courts, or indoor tracks for additional exercise options.
+                    areas, sauna or steam rooms for relaxation.
                   </p>
                 </div>
               </div>

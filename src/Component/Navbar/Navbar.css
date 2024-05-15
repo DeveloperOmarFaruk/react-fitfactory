@@ -190,3 +190,10 @@ input[type="checkbox"] {
     transform: translateX(-50%);
   }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 85%;
+  }
+}

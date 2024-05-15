@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import Bodybuilder from "../../Images/portrait-of-attractive-naked-bodybuilder.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -7,13 +7,20 @@ import useAuth from "../../Hooks/useAuth";
 const Login = () => {
   const {
     handleGoogleSignIn,
+    email,
+    password,
+    formData,
     setEmail,
     setPassword,
     handleLogIn,
     setUserInfo,
     setError,
     setLoading,
+    setFormData,
   } = useAuth();
+
+  const [aleart, setAleart] = useState("");
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -34,10 +41,28 @@ const Login = () => {
       });
   };
 
+  const handleFormLogIn = (e) => {
+    e.preventDefault();
+
+    handleLogIn()
+      .then((userCredential) => {
+        const user = userCredential.user;
+        setFormData(user);
+        windowScroll();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+
+    if (formData.email !== email || formData.password !== password) {
+      return setAleart("Your email or password is wrong!");
+    }
+  };
+
   return (
     <>
       <div className="login-container">
-        <div className="banner-div">
+        <div className="login-banner-div">
           <div className="section">
             <div className="row row-edit">
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
@@ -57,17 +82,17 @@ const Login = () => {
 
                 <div className="login-header-right-div-text">
                   <p>
-                    Duis fermentum libero quis commodo blandit. Etiam urna
-                    ligula, volutpat non eros non, suscipit lacinia orci. Donec
-                    eu facilisis lorem, eget laoreet mi. Vivamus laoreet, urna
-                    eget laoreet ultrices, dolor risus ornare nisl, ut lacinia
-                    ipsum odio id mi.
+                    Welcome to our gymnasium's user login platform, designed to
+                    enhance your fitness journey! Our intuitive login system
+                    provides members with seamless access to personalized
+                    workout plans, class schedules, and exclusive member
+                    resources.
                   </p>
 
                   <p>
-                    Pellentesque eget eros at tortor luctus porttitor. Donec
-                    scelerisque dolor nec eros aliquam, sed faucibus augue
-                    dapibus.
+                    Access your fitness journey with ease! Our gym's user login
+                    lets you track progress, book classes, and connect with our
+                    community securely.
                   </p>
                 </div>
               </div>
@@ -79,7 +104,7 @@ const Login = () => {
       <div className="login-form-container">
         <div className="section">
           <div className="row row-edit">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
               <h1 className="text-white mt-4 mb-4">Please Login</h1>
               <div>
                 <div className="mb-3">
@@ -101,7 +126,14 @@ const Login = () => {
                   />
                 </div>
 
-                <button onClick={handleLogIn} className=" login-btn mt-4 mb-4">
+                <div className="mb-3 text-danger">
+                  {aleart ? <p>{aleart}</p> : <p></p>}
+                </div>
+
+                <button
+                  onClick={handleFormLogIn}
+                  className=" login-btn mt-4 mb-4"
+                >
                   LogIn
                 </button>
                 <br />

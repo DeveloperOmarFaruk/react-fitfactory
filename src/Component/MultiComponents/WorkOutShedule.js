@@ -9,7 +9,7 @@ const WorkOutShedule = () => {
     <>
       <div className="section">
         <div className="row row-edit">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="common-header-right-div-title">
               <h4>Join Us</h4>
               <h2>WORKOUT SCHEDULES</h2>
@@ -20,7 +20,7 @@ const WorkOutShedule = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="workout-shedule-list-div">
               <ul>
                 <li>

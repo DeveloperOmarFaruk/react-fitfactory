@@ -35,7 +35,7 @@ const Overview = () => {
   return (
     <>
       <div className="section">
-        <div className="row">
+        <div className="row row-edit">
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
             <div className="common-header-right-div-title">
               <h4>Gym Overview</h4>
@@ -48,18 +48,14 @@ const Overview = () => {
                 variety of group fitness classes led by certified instructors.
                 These classes encompass a wide range of activities such as yoga,
                 Pilates, spinning, Zumba, HIIT (High-Intensity Interval
-                Training), and more. Group classes provide an opportunity for
-                members to engage in structured workouts, enjoy the camaraderie
-                of exercising with others, and benefit from the expertise and
-                motivation of skilled instructors.
+                Training), and more.
               </p>
 
               <p>
                 A gymnasium serves as a hub for physical activity, health
                 promotion, and community engagement. It provides individuals
                 with the resources, guidance, and motivation they need to lead
-                active, healthy lifestyles, empowering them to take control of
-                their fitness journey and thrive both physically and mentally.
+                active, healthy lifestyles.
               </p>
             </div>
           </div>

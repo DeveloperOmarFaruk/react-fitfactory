@@ -21,7 +21,7 @@ const WhatClintsSay = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -48,7 +48,7 @@ const WhatClintsSay = () => {
     <>
       <div className="section">
         <div className="row row-edit">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="common-header-col-image">
               <img src={WomenBodybuilder} alt="Bodybuilder__Image" />
               <div className="common-header-col-image-centered">
@@ -58,7 +58,7 @@ const WhatClintsSay = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="common-header-right-div-title">
               <h4>Testimonials</h4>
               <h2>WHAT CLIENTS SAY</h2>

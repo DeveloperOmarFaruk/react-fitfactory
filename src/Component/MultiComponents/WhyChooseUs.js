@@ -16,10 +16,10 @@ const WhyChooseUs = () => {
               <h2>WHY CHOOSE US</h2>
             </div>
 
-            <div className="row mt-4">
+            <div className="row row-edit mt-4">
               {featureData.map((item) => (
                 <div
-                  className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4"
+                  className="clo-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4"
                   key={item.id}
                 >
                   <div className="row why-choose-us-div">

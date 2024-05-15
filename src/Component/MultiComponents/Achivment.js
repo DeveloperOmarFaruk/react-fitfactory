@@ -12,7 +12,7 @@ const Achivment = () => {
         <div className="row row-edit">
           {achivmentData.map((item) => (
             <div
-              className="col-lg-3 col-md-3 col-sm-6 col-xs-12 mt-4"
+              className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-4"
               key={item.id}
             >
               <div className="achivment-card">
