@@ -1,10 +1,9 @@
 import React from "react";
 import "./MultiComponents.css";
-
 import useFunction from "../../Hooks/useFunction";
 
 const ChoosePlan = () => {
-  const { priceDataMonthly } = useFunction();
+  const { priceDataMonthly, handleContactPage } = useFunction();
 
   return (
     <>
@@ -43,7 +42,7 @@ const ChoosePlan = () => {
                 <p>Get 1-on-1 training</p>
 
                 <div className="common-button-design text-center mt-4">
-                  <button>Choose</button>
+                  <button onClick={handleContactPage}>Choose</button>
                 </div>
               </div>
             </div>

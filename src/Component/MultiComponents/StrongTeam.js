@@ -5,8 +5,11 @@ import { Carousel } from "react-responsive-carousel";
 import carousel1 from "../../Images/carousel1.jpg";
 import carousel2 from "../../Images/carousel2.jpg";
 import carousel3 from "../../Images/carousel3.jpg";
+import useFunction from "../../Hooks/useFunction";
 
 const StrongTeam = () => {
+  const { handleTrainersPage } = useFunction();
+
   return (
     <>
       <div className="section">
@@ -38,7 +41,7 @@ const StrongTeam = () => {
             </div>
 
             <div className="common-button-design">
-              <button>More Trainers</button>
+              <button onClick={handleTrainersPage}>More Trainers</button>
             </div>
           </div>
 

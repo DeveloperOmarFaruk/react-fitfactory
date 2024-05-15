@@ -4,14 +4,10 @@ import WomenBodybuilder from "../../Images/young-woman-flexing-muscles-with-kett
 import ClassesOverview from "../../Component/MultiComponents/ClassesOverview";
 import ClassesFeatures from "../../Component/MultiComponents/ClassesFeatures";
 import ClassSchedules from "../../Component/MultiComponents/ClassSchedules";
-import { useParams } from "react-router";
 import useFunction from "../../Hooks/useFunction";
 
 const ClassesDetails = () => {
-  const { classesData } = useFunction();
-  const { id } = useParams();
-
-  const filterData = classesData.filter((item) => item.id == id);
+  const { filterDetailsData } = useFunction();
 
   return (
     <>
@@ -32,13 +28,13 @@ const ClassesDetails = () => {
                 <div className="classes-details-header-right-div-title">
                   <h4>Featured Class</h4>
 
-                  {filterData.map((item) => (
+                  {filterDetailsData.map((item) => (
                     <h2 key={item.id}>{item.title}</h2>
                   ))}
                 </div>
 
                 <div className="classes-details-header-right-div-text">
-                  {filterData.map((item) => (
+                  {filterDetailsData.map((item) => (
                     <p key={item.id}>{item.description}</p>
                   ))}
                 </div>
@@ -49,7 +45,7 @@ const ClassesDetails = () => {
       </div>
 
       <div className="classes-details-container-div-gray">
-        <ClassesOverview filterData={filterData} />
+        <ClassesOverview filterDetailsData={filterDetailsData} />
       </div>
 
       <div className="classes-details-container-div-image">
@@ -57,7 +53,7 @@ const ClassesDetails = () => {
       </div>
 
       <div className="classes-details-container-div-gray">
-        <ClassSchedules filterData={filterData} />
+        <ClassSchedules filterDetailsData={filterDetailsData} />
       </div>
     </>
   );

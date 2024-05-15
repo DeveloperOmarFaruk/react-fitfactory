@@ -7,6 +7,11 @@ const ClassesList = () => {
   const { classesData } = useFunction();
   const navigate = useNavigate();
 
+  const handleDetails = (e) => {
+    navigate(`/classes-details/${e}`);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <div className="section">
@@ -32,7 +37,7 @@ const ClassesList = () => {
                 <div className="common-button-design text-center">
                   <button
                     onClick={() => {
-                      navigate(`/classes-details/${item.id}`);
+                      handleDetails(item.id);
                     }}
                   >
                     Choose

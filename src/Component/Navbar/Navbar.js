@@ -1,13 +1,24 @@
 import React from "react";
 import "./Navbar.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import $ from "jquery";
 import logo from "../../Images/fitfactory_logo.png";
 import useAuth from "../../Hooks/useAuth";
+import useFunction from "../../Hooks/useFunction";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const { userInfo, handleSignOut, formData } = useAuth();
+  const {
+    handleHomePage,
+    handleAboutPage,
+    handleClassesPage,
+    handleReviewPage,
+    handlePricingPage,
+    handleTrainersPage,
+    handleContactPage,
+    handleProfilePage,
+    handleLogInPage,
+  } = useFunction();
 
   $(window).scroll(function () {
     if ($(document).scrollTop() < 1) {
@@ -26,7 +37,7 @@ const Navbar = () => {
       <header className="header">
         <div className="container">
           <nav>
-            <div className="logo" onClick={() => navigate("/")}>
+            <div className="logo" onClick={handleHomePage}>
               <img src={logo} alt="logo" />
             </div>
 
@@ -36,13 +47,22 @@ const Navbar = () => {
             </label>
             <ul>
               <li>
-                <NavLink to="/" className="nav-links" activeClass="active">
+                <NavLink
+                  to="/"
+                  className="nav-links"
+                  activeClass="active"
+                  onClick={handleHomePage}
+                >
                   Home
                 </NavLink>
               </li>
 
               <li>
-                <NavLink to="/about-us" className="nav-links">
+                <NavLink
+                  to="/about-us"
+                  className="nav-links"
+                  onClick={handleAboutPage}
+                >
                   About Us
                 </NavLink>
               </li>
@@ -54,16 +74,28 @@ const Navbar = () => {
                     <i className="fa-solid fa-angle-down down-arrow"></i>
                   </NavLink>
                   <div className="dropdown-content">
-                    <NavLink to="/classes">Classes</NavLink>
-                    <NavLink to="/trainers">Trainers</NavLink>
-                    <NavLink to="/review">Review</NavLink>
-                    <NavLink to="/pricing">Pricing</NavLink>
+                    <NavLink to="/classes" onClick={handleClassesPage}>
+                      Classes
+                    </NavLink>
+                    <NavLink to="/trainers" onClick={handleTrainersPage}>
+                      Trainers
+                    </NavLink>
+                    <NavLink to="/review" onClick={handleReviewPage}>
+                      Review
+                    </NavLink>
+                    <NavLink to="/pricing" onClick={handlePricingPage}>
+                      Pricing
+                    </NavLink>
                   </div>
                 </div>
               </li>
 
               <li>
-                <NavLink to="/contact-us" className="nav-links">
+                <NavLink
+                  to="/contact-us"
+                  className="nav-links"
+                  onClick={handleContactPage}
+                >
                   Contact Us
                 </NavLink>
               </li>
@@ -77,7 +109,11 @@ const Navbar = () => {
                   </li>
 
                   <li>
-                    <NavLink to="/user-profile" className="nav-links">
+                    <NavLink
+                      to="/user-profile"
+                      className="nav-links"
+                      onClick={handleProfilePage}
+                    >
                       <i className="fa-solid fa-user"></i>
                     </NavLink>
                   </li>
@@ -85,7 +121,11 @@ const Navbar = () => {
               ) : (
                 <>
                   <li>
-                    <NavLink to="/login" className="nav-links">
+                    <NavLink
+                      to="/login"
+                      className="nav-links"
+                      onClick={handleLogInPage}
+                    >
                       Login
                     </NavLink>
                   </li>

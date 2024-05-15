@@ -1,7 +1,10 @@
 import React from "react";
 import "./MultiComponents.css";
 import WorkoutImage from "../../Images/couple-doing-push-ups-with-kettlebells.jpg";
+import useFunction from "../../Hooks/useFunction";
 const WorkOutShedule = () => {
+  const { handleContactPage } = useFunction();
+
   return (
     <>
       <div className="section">
@@ -91,7 +94,7 @@ const WorkOutShedule = () => {
             </div>
 
             <div className="common-button-design mt-4">
-              <button>Free Trail</button>
+              <button onClick={handleContactPage}>Free Trail</button>
             </div>
           </div>
         </div>

@@ -4,9 +4,8 @@ import useFunction from "../../Hooks/useFunction";
 
 const ChoosePlanDaynamic = () => {
   const [click, setClick] = useState(true);
-  const { priceDataMonthly, priceDataYearly } = useFunction();
-
-  console.log(click);
+  const { priceDataMonthly, priceDataYearly, handleContactPage } =
+    useFunction();
 
   return (
     <>
@@ -63,7 +62,7 @@ const ChoosePlanDaynamic = () => {
                   <p>Get 1-on-1 training</p>
 
                   <div className="common-button-design text-center mt-4">
-                    <button>Choose</button>
+                    <button onClick={handleContactPage}>Choose</button>
                   </div>
                 </div>
               </div>
@@ -96,7 +95,7 @@ const ChoosePlanDaynamic = () => {
                   <p>Get 1-on-1 training</p>
 
                   <div className="common-button-design text-center mt-4">
-                    <button>Choose</button>
+                    <button onClick={handleContactPage}>Choose</button>
                   </div>
                 </div>
               </div>

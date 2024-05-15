@@ -33,8 +33,8 @@ const ClassesOverview = (props) => {
     id.find(".btn-close").show();
   }
 
-  const { filterData } = props;
-  console.log(filterData);
+  const { filterDetailsData } = props;
+
   return (
     <>
       <div className="section">
@@ -43,17 +43,17 @@ const ClassesOverview = (props) => {
             <div className="common-header-right-div-title">
               <h4>Class Overview</h4>
 
-              {filterData.map((item) => (
+              {filterDetailsData.map((item) => (
                 <h2 key={item.id}>{item.title}</h2>
               ))}
             </div>
 
             <div className="common-header-right-div-text">
-              {filterData.map((item) => (
+              {filterDetailsData.map((item) => (
                 <p key={item.id}>{item.overview1}</p>
               ))}
 
-              {filterData.map((item) => (
+              {filterDetailsData.map((item) => (
                 <p key={item.id}>{item.overview2}</p>
               ))}
             </div>
@@ -61,7 +61,7 @@ const ClassesOverview = (props) => {
 
           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
             <div className="about-vid-wrap" id="vid-1">
-              {filterData.map((item) => (
+              {filterDetailsData.map((item) => (
                 <img
                   key={item.id}
                   className="thumbnail-img"

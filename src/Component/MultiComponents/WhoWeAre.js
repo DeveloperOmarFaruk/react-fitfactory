@@ -1,8 +1,12 @@
 import React from "react";
 import "./MultiComponents.css";
 import $ from "jquery";
+import useFunction from "../../Hooks/useFunction";
 
 const WhoWeAre = () => {
+  const { handleAboutPage } = useFunction();
+
+  // Video Play jquery function
   $(document).ready(function () {
     $(".vid-wrap .thumbnail-img").click(function () {
       var id = $(this).parent().attr("id");
@@ -81,7 +85,7 @@ const WhoWeAre = () => {
             </div>
 
             <div className="common-button-design">
-              <button>Read More</button>
+              <button onClick={handleAboutPage}>Read More</button>
             </div>
           </div>
         </div>

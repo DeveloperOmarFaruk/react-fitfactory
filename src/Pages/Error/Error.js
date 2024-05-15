@@ -2,8 +2,10 @@ import React from "react";
 import "./Error.css";
 import "../Login/Login.css";
 import Bodybuilder from "../../Images/female-bodybuilder-training-at-the-gym40.png";
+import useFunction from "../../Hooks/useFunction";
 
 const Error = () => {
+  const { handleHomePage } = useFunction();
   return (
     <>
       <div className="error-404-container">
@@ -60,7 +62,7 @@ const Error = () => {
                 Why not return to the home page and continue browsing?
               </h5>
               <div className="common-button-design mt-4">
-                <button>Back Home</button>
+                <button onClick={handleHomePage}>Back Home</button>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">

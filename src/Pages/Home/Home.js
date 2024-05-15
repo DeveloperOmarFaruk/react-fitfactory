@@ -9,7 +9,9 @@ import Achivment from "../../Component/MultiComponents/Achivment";
 import StrongTeam from "../../Component/MultiComponents/StrongTeam";
 import WhatClintsSay from "../../Component/MultiComponents/WhatClintsSay";
 import ChoosePlan from "../../Component/MultiComponents/ChoosePlan";
+import useFunction from "../../Hooks/useFunction";
 const Home = () => {
+  const { handleContactPage } = useFunction();
   return (
     <>
       <div className="home-container">
@@ -20,17 +22,17 @@ const Home = () => {
                 <div className="header-vartical-icon">
                   <div className="vertical-line"></div>
                   <div>
-                    <Link to="#">
+                    <Link to="/">
                       <i className="fa-brands fa-facebook-f"></i>
                     </Link>
                   </div>
                   <div>
-                    <Link to="#">
+                    <Link to="/">
                       <i className="fa-brands fa-twitter"></i>
                     </Link>
                   </div>
                   <div>
-                    <Link to="#">
+                    <Link to="/">
                       <i className="fa-brands fa-linkedin-in"></i>
                     </Link>
                   </div>
@@ -43,7 +45,7 @@ const Home = () => {
                   <div className="header-col-image-centered">
                     <h1>Hard Rock Game</h1>
                     <h1>Time to Chnage</h1>
-                    <button>Know More</button>
+                    <button onClick={handleContactPage}>Know More</button>
                   </div>
                 </div>
               </div>
