@@ -26,11 +26,11 @@ const ReviewStories = () => {
                   <div className="col-3">
                     <img src={item.image} alt="review_card_image" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-7 " style={{ paddingLeft: "17px" }}>
                     <h6>{item.name}</h6>
                     <p>{item.time}</p>
                   </div>
-                  <div className="col-3">
+                  <div className="col-2">
                     <i className="fa-solid fa-quote-right"></i>
                   </div>
                 </div>

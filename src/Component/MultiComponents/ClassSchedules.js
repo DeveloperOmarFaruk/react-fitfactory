@@ -11,7 +11,7 @@ const ClassSchedules = (props) => {
     <>
       <div className="section">
         <div className="row row-edit">
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             <div className="common-header-right-div-title">
               <h4>Class Schedules</h4>
               <h2>TRAINING SESSION</h2>
@@ -22,7 +22,7 @@ const ClassSchedules = (props) => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-4">
             {filterDetailsData.map((item) => (
               <div className="workout-shedule-list-div" key={item.id}>
                 {item.shedule.map((data) => (

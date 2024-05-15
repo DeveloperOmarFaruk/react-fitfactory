@@ -451,7 +451,7 @@
   padding-top: 0px;
   padding-bottom: 5px;
   width: 50%;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0px;
 }
 
@@ -461,7 +461,7 @@
   padding-bottom: 5px;
   width: 50%;
   text-align: right;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 0px;
   margin: 0px;
 }
@@ -662,6 +662,26 @@
   .common-header-right-image-div img {
     width: 100%;
   }
+
+  .workout-shedule-list-div ul li:nth-last-child(2) {
+    font-size: 12px;
+  }
+
+  .workout-shedule-list-div ul li:nth-last-child(1) {
+    font-size: 12px;
+  }
+
+  .dynamic-button button {
+    padding: 10px 30px;
+  }
+
+  .review-stories-card h6 {
+    font-size: 13px !important;
+  }
+
+  .review-stories-card {
+    padding: 15px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -755,6 +775,14 @@
 
   .award-card-image {
     padding-left: 3.5rem;
+  }
+
+  .review-stories-card h6 {
+    font-size: 12px !important;
+  }
+
+  .review-stories-card {
+    padding: 13px;
   }
 }
 
