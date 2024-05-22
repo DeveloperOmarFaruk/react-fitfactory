@@ -1,6 +1,6 @@
 # Here is some UI and work shown in this repository
 #
-[Live Preview Project](https://fir-authentication-7fd8f.web.app/)
+[Live Preview Project](https://golden-sunburst-b1ebbc.netlify.app/)
 #
 ## Project Details
 #
